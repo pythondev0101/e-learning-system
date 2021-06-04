@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 const CustomRightTile = ({title, picture}) => {
     return (
         <Row lg={12}>
-            <Col lg={8}>
-                <Row style={{paddingLeft: 500}}>
+            <Col lg={7}>
+                <Row style={{paddingLeft: 400}}>
                     <h4 className='font-face' style={{
                         color: 'rgb(41, 120, 181)',
                         fontWeight: 'bold',
@@ -28,8 +28,8 @@ const CustomRightTile = ({title, picture}) => {
                     </p>
                 </Row>
             </Col>
-            <Col lg={4}>
-                <Image src={picture} width='80%'/>
+            <Col lg={5}>
+                <Image src={picture} width='100%'/>
             </Col>
         </Row>
     )

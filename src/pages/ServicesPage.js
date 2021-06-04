@@ -36,7 +36,7 @@ export default function AnimationRouter() {
 
 
 const koreanLang1 = require('../assets/images/korean_lang.png');
-const koreanLang2 = require('../assets/images/korean_lang2.jpg');
+const koreanLang2 = require('../assets/images/korean_culture.jpg');
 const workKorea1 = require('../assets/images/work1.jpg');
 const workKore2 = require('../assets/images/work2.jpg')
 
@@ -132,7 +132,8 @@ function LearnKorea(){
       <div>
         <Container style={{height: 100}}></Container>
         <CustomLeftTile title='Language' picture={koreanLang1.default}/>
-        <CustomRightTile title='Culture' piture={koreanLang2.default} />
+        <Container style={{height: 100}}></Container>
+        <CustomRightTile title='Culture' picture={koreanLang2.default} />
         <Container style={{height: 100}}></Container>
       </div>
     )
@@ -144,6 +145,7 @@ function WorkOnKore(){
       <div>
           <Container style={{height: 100}}></Container>
           <CustomLeftTile title='Operator' picture={workKorea1.default}/>
+          <Container style={{height: 100}}></Container>
           <CustomRightTile title='Technician' picture={workKore2.default} />
           <Container style={{height: 100}}></Container>
       </div>
