@@ -70,7 +70,7 @@ const Footer = () => {
                             </Row>
                             <Row style={{marginBottom: 10}}>
                                 <Col lg={1} xl={1} style={{ paddingTop: 5}}>
-                                    <Image src={facebookLogo.default} width='1000%' />
+                                    <Image src={facebookLogo.default} width='2500%' />
                                 </Col>
                                 <Col lg={2} xl={1} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{
@@ -82,7 +82,7 @@ const Footer = () => {
                             </Row>
                             <Row style={{marginBottom: 10}}>
                                 <Col lg={1} xl={1} style={{ paddingTop: 5}}>
-                                    <Image src={phoneCallIcon.default} width='1000%' />
+                                    <Image src={phoneCallIcon.default} width='2500%' />
                                 </Col>
                                 <Col lg={2} xl={1} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{
@@ -94,7 +94,7 @@ const Footer = () => {
                             </Row>
                             <Row style={{marginBottom: 10}}>
                                 <Col lg={1} xl={1} style={{ paddingTop: 5}}>
-                                    <Image src={gmailIcon.default} width='1000%' />
+                                    <Image src={gmailIcon.default} width='2500%' />
                                 </Col>
                                 <Col lg={2} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{

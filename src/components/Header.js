@@ -2,16 +2,16 @@ import PrimeNavBar from './PrimeNavBar';
 import PrimeBanner from './PrimeBanner';
 import TransparentButton from './TransparentButton';
 import PropTypes from 'prop-types';
+import { useCallback, useState } from "react";
 
-const Header = (onChangePage) => {
+const Header = () => {
     return (
-        
         <div>
             <div>
                 <PrimeBanner />
             </div>
             <div style={{position: 'absolute', top: 20, left: 150, margin: '30px'}}>
-                <PrimeNavBar onClick={onChangePage}/>
+                <PrimeNavBar/>
             </div>
             <dir style={{position: 'absolute', top: 200, left: 50, margin: '30px'}}>
                 <h1 className='font-face' style={{
@@ -39,8 +39,6 @@ const Header = (onChangePage) => {
     )
 }
 
-Header.prototype = {
-    onChangePage: PropTypes.func.bind(this)
-}
+
 
 export default Header

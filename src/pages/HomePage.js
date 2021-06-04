@@ -1,13 +1,23 @@
 import React from 'react'
 import {Container, Row, Col, Image, Carousel} from 'react-bootstrap';
 import RightTitleBar from '../components/RightTitleBar';
+import LeftTitleBar from '../components/LeftTitleBar';
 import StudentTestimonies from '../components/StudentTestimonies';
+import CustomLeftTile from '../components/CustomLeftTile';
+import CustomRightTile from '../components/CustomRightTile';
+import BranchCard from '../components/BranchCard';
 
 const ceoPhoto = require('../assets/images/ceo_photo_2.png');
 const actualClass1 = require('../assets/images/actual_class_1.jpg');
 const actualClass2 = require('../assets/images/actual_class_2.jpg');
 const graduation1 = require('../assets/images/graduation_1.jpg');
-const samplePic = require('../assets/images/ceo_photo.png');
+const demoStudent1 = require('../assets/images/demo_profile_1.jpg');
+const demoStudent2 = require('../assets/images/demo_profile_2.jpg');
+const demoStudent3 = require('../assets/images/demo_profile_3.jpg');
+const hanguel = require('../assets/images/hangeul.png');
+const korea = require('../assets/images/korea.jpg');
+const lorem = require('../assets/images/lorem_logo.png');
+const underMaintenance = require('../assets/images/under_maintenance.png');
 
 const HomePage = () => {
     return (
@@ -24,9 +34,8 @@ const HomePage = () => {
                             }}
                             >Hello there</h1>
                         </Row>
-                        <Row style={{ paddingTop: 50}}>
+                        <Row style={{ paddingTop: 40}}>
                             <p className='font-face' style={{
-                                fontWeight: 'lighter',
                                 fontSize: 16,
                             }}
                             >We are glad that you want to know us better! 
@@ -50,79 +59,122 @@ const HomePage = () => {
             </Container>
 
             {/* Title Bar For Testimonies */}
-            <Container style={{marginTop: -1}}>
-                <RightTitleBar title='Testimonies'/>
-            </Container>
+            
+            <RightTitleBar title='Testimonies'/>
+    
 
             {/* Testimonies Carousel*/}
-            <Container lg={12} style={{ marginTop: 100}}>
-                <Container style={{
-                    backgroundColor: 'blue',
-                    width: '100%'
-                }}>
-                    <Carousel>
-                        <Carousel.Item interval={1000}>
-                            <Image src={actualClass1.default} width ='1150px'height='600px'/>
-                            <Carousel.Caption>
+            <Carousel style={{
+                width:'100%',
+                height:'600px',
+                marginTop: 100,      
+            }}>
+                <Carousel.Item interval={1000}>
+                        <Image src={actualClass1.default} width ='1150px'height='600px'/>
+                        <Carousel.Caption>
                             <h3>Orientation</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={500}>
-                            <Image src={actualClass2.default} width ='1150px'height='600px'/>
-                            <Carousel.Caption>
-                            <h3>Actual Class</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <Image src={graduation1.default} width ='1150px'height='600px'/>
-                            <Carousel.Caption>
-                            <h3>Graduation</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </Container>
-            </Container>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                <Carousel.Item interval={500}>
+                        <Image src={actualClass2.default} width ='1150px'height='600px'/>
+                        <Carousel.Caption>
+                        <h3>Actual Class</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                        <Image src={graduation1.default} width ='1150px'height='600px'/>
+                        <Carousel.Caption>
+                        <h3>Graduation</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
 
             {/* Student Testimonies */}
 
-            <Container>
-            <Carousel>
-                    <Carousel.Item interval={1000}>
-                        <Row>
-                                <Col>
-                                        <Row>
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                Porro accusantium sint delectus beatae commodi modi id tempore cum suscipit sapiente. S
-                                                it, aspernatur? Nostrum, aliquid distinctio ea maxime temporibus doloribus hic?
-                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, odit minus cum repudiandae commodi 
-                                                ab voluptates dolorum, animi saepe mollitia amet dolor facilis ullam sunt consequuntur distinctio! Dolor, eaque id.
-                                            </p>
-                                        </Row>
-                                        <Row>
-                                            <h3>Marck Demo</h3>
-                                        </Row>
-                                </Col>
+            <Container style={{marginTop: 100}}>
+                <h1 className='font-face' style={{
+                    fontWeight: 'bold',
+                    fontSize: 50,
+                    color: 'rgb(41, 120, 181)',
+                }}
+                >What our Student's Say
+                </h1>
+            </Container>
+            
 
-                                <Col>
-                                        <Image src={samplePic.default} roundedCircle  width='50%'/>
-                                </Col>
-                        </Row>
-                    </Carousel.Item>
-                        
-                    <Carousel.Item interval={500}>
-                            <h1>Demo</h1>
-                    </Carousel.Item>
+            <Container style={{marginTop: 50}}>
+                <Carousel>
+                        <Carousel.Item interval={1000} style={{padding: 40}}>
+                            <StudentTestimonies fullName='Demo Mark' picture={demoStudent1.default}/>
+                        </Carousel.Item>
+                            
+                        <Carousel.Item interval={500} style={{padding: 40}}>
+                            <StudentTestimonies fullName='Demo Jhon' picture={demoStudent2.default}/>
+                        </Carousel.Item>
 
-                    <Carousel.Item>
-                            <h1>World</h1>
-                    </Carousel.Item>
-            </Carousel>
+                        <Carousel.Item style={{padding: 40}}>
+                            <StudentTestimonies fullName='Demo Kathy' picture={demoStudent3.default}/>
+                        </Carousel.Item>
+                </Carousel>
+            </Container>
+            <Container style={{height: 100}}></Container>
+
+            {/* Title Bar For Services */}
+
+        <LeftTitleBar title='Services'/>
+          
+          <Container style={{height: 50}}></Container>
+
+           <Container>
+               <CustomLeftTile title='Learn Korea' picture={hanguel.default} />
+           </Container>
+           
+           <Container style={{height: 100}}></Container>
+
+           <Container>
+               <CustomRightTile title='Work at Korea' picture={korea.default} />
+           </Container>
+           
+           <Container style={{height: 100}}></Container>
+
+           <Container>
+               <CustomLeftTile title='Lorem Ipsum' picture={lorem.default} />
+           </Container>
+
+           <Container style={{height: 100}}></Container>
+
+
+            {/* Title Bar For Brabches */}
+
+            <Container style={{marginTop: -1}}>
+                <RightTitleBar title='Branches'/>
+            </Container>
+            
+            <Container style={{height: 50}}></Container>
+
+            <Container style={{textAlign: 'center'}}>
+                <h1>Some Of Our Branches</h1>
+            </Container>
+            <Container style={{textAlign: 'center', marginLeft: 15, marginRight: 50}}>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur provident quidem dolor deleniti reiciendis. Rem assumenda dolor, 
+                    voluptates inventore laboriosam fugiat voluptatem nesciunt suscipit quae. 
+                    Repellendus sequi cumque beatae laudantium.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque perferendis nihil
+                    veniam voluptatum maiores praesentium fugit. Esse, fuga nemo, aspernatur unde perferendis 
+                    itaque veritatis voluptatum consequatur hic et commodi similique.
+                </p>
             </Container>
 
+            <Container style={{height: 50}}></Container>
+
+           
+            <Image src={underMaintenance.default} style={{marginLeft: 150}} />
+           
         </Container>
     )
 }

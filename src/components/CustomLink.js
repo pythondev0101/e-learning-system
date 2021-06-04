@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
+import React from 'react'
 
-
-const TransparentButton = ({text, borderRadius, onTap, isOnClick}) => {
+const CustomLink = () => {
+    const [isOnClick, setClickActive] = useState(false);
     return (
        <button className='font-face' style={{
         backgroundColor: isOnClick ?'white' : 'transparent',
@@ -18,20 +18,15 @@ const TransparentButton = ({text, borderRadius, onTap, isOnClick}) => {
         color: isOnClick ? 'black':'white',
        }}
        
-       onClick={onTap}
+       onClick={() => {
+        setClickActive(!isOnClick);
+        onTap();
+       }}
 
        >
-        {text}
+           {text}
        </button>
     )
 }
 
-
-TransparentButton.prototype = {
-    text: PropTypes.string,
-    borderRadius: PropTypes.number,
-    onTap: PropTypes.func,
-    isOnClick: PropTypes.bool
-}
-
-export default TransparentButton
+export default CustomLink
