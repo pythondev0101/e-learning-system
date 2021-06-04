@@ -1,21 +1,16 @@
 import PropTypes from 'prop-types'
-import { Button } from 'react-bootstrap'
 import React, { useState } from 'react';
 
 
-const TransparentButton = ({text, borderRadius}) => {
+const TransparentButton = ({text, borderRadius, onChange, id}) => {
 
 
-    const onClick = (e) =>{
-        console.log('click');
-        setClickActive(!isOnClick);
-        console.log(e);
-    }
+
 
     const [isOnClick, setClickActive] = useState(false);
 
     return (
-       <button className='font-face' style={{
+       <button id={id} className='font-face' style={{
         backgroundColor: isOnClick ?'white' : 'transparent',
         border: isOnClick? '2px solid transparent' : '2px solid rgb(138, 182, 214)',
         color: 'black',
@@ -30,7 +25,10 @@ const TransparentButton = ({text, borderRadius}) => {
         color: isOnClick ? 'black':'white',
        }}
        
-       onClick={onClick}
+       onClick={(e) => {
+        setClickActive(!isOnClick);
+        onChange(e.target.id);
+       }}
 
        >
            {text}
@@ -40,9 +38,10 @@ const TransparentButton = ({text, borderRadius}) => {
 
 
 TransparentButton.prototype = {
-    
     text: PropTypes.string,
-    borderRadius: PropTypes.number
+    borderRadius: PropTypes.number,
+    onChange: PropTypes.func.bind(this),
+    id: PropTypes.string
 }
 
 export default TransparentButton

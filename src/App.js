@@ -2,18 +2,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
-import {Container} from 'react-bootstrap';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import {Container} from 'react-bootstrap';
+
 function App() {
+  const onChangePage = value => {
+    alert('this is the value: '+ value);
+  }
+
   return (
     <div>
-      <Header />
-      <Container fluid style={{
-        width: '100%',
-        height: 500,
-        backgroundColor: 'blue'
-      }}>
-      </Container>
+      <Header onChangePage={onChangePage}/>
+      <Container style={{height: 100}}></Container>
+      <HomePage />
+      <Container style={{height: 100}}></Container>
       <Footer />
     </div>
   );

@@ -4,9 +4,9 @@ import TransparentButton from './TransparentButton';
 
 const reverseWave = require('../assets/svg/reverse_wave.svg');
 const primeLogo = require('../assets/icons/prime_logo.png');
-const facebookLogo = require('../assets/svg/facebook_logo.svg');
-const gmailIcon = require('../assets/svg/gmail_icon.svg');
-const phoneCallIcon = require('../assets/svg/phone_call_icon.svg');
+const facebookLogo = require('../assets/icons/facebook_icon.png');
+const gmailIcon = require('../assets/icons/gmail_icon.png');
+const phoneCallIcon = require('../assets/icons/phone_icon.png');
 
 const Footer = () => {
     return (
@@ -69,10 +69,10 @@ const Footer = () => {
                                 >Contact Us</h5>
                             </Row>
                             <Row style={{marginBottom: 10}}>
-                                <Col lg={1} style={{ paddingTop: 5}}>
-                                    <Image src={facebookLogo.default} width='2300%' />
+                                <Col lg={1} xl={1} style={{ paddingTop: 5}}>
+                                    <Image src={facebookLogo.default} width='1000%' />
                                 </Col>
-                                <Col lg={2} style={{ paddingLeft: 40, paddingTop: 10}}>
+                                <Col lg={2} xl={1} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{
                                         color: 'rgba(255, 255, 255, 0.8)',
                                         fontWeight: 'lighter'  
@@ -81,10 +81,10 @@ const Footer = () => {
                                 </Col>
                             </Row>
                             <Row style={{marginBottom: 10}}>
-                                <Col lg={1} style={{ paddingTop: 5}}>
-                                    <Image src={phoneCallIcon.default} width='2300%' />
+                                <Col lg={1} xl={1} style={{ paddingTop: 5}}>
+                                    <Image src={phoneCallIcon.default} width='1000%' />
                                 </Col>
-                                <Col lg={2} style={{ paddingLeft: 40, paddingTop: 10}}>
+                                <Col lg={2} xl={1} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{
                                         color: 'rgba(255, 255, 255, 0.8)',
                                         fontWeight: 'lighter'  
@@ -93,8 +93,8 @@ const Footer = () => {
                                 </Col>
                             </Row>
                             <Row style={{marginBottom: 10}}>
-                                <Col lg={1} style={{ paddingTop: 5}}>
-                                    <Image src={gmailIcon.default} width='2300%' />
+                                <Col lg={1} xl={1} style={{ paddingTop: 5}}>
+                                    <Image src={gmailIcon.default} width='1000%' />
                                 </Col>
                                 <Col lg={2} style={{ paddingLeft: 40, paddingTop: 10}}>
                                     <h6 className='font-face' style={{
