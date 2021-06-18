@@ -6,8 +6,6 @@
 
 
 
-
-
 @media (min-width:320px)  {
     /* smartphones, iPhone, portrait 480x320 phones */ 
 
@@ -45,26 +43,7 @@
 
 
 @media (max-width: 500px){
-    .home-content{
-        margin-top: 250px;
-    }
-    .welcome-container h1{
-       color: blue;
-        font-size: 45px;
-        font-family: 'Montserrat';
-        font-weight: bold;
-    }
-    .ceo-mobile-photo{
-        display: block;
-    }
 
-    .ceo-mobile-photo img{
-        width: 150px;
-    }
-
-    .ceo-desktop-photo{
-        display: none;
-    }
 
 }
 
@@ -162,6 +141,6 @@
     /* hi-res laptops and desktops */
 
     .home-content{
-        margin-top: 650px;
+        margin-top: 500px;
     }
 }

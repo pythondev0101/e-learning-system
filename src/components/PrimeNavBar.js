@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import AppDrawer from '../components/AppDrawer';
 import { useState } from 'react';
 
+
 const primeLogo = require('../assets/icons/prime_logo.png');
 
 
@@ -15,15 +16,19 @@ const PrimeNavBar = () => {
 
 
     return (
-        <>
+    <>
+        <div data-aos="fade-down" data-aos-duration="1500">
             <div className='navbar-container'>
                 <Row>
+
                     <Col lg='fluid' md='fluid' xs='fluid'>
                         <img src={primeLogo.default} alt="" />
                     </Col>
                     <Col lg='fluid' md='fluid' xs='fluid'>
                         <h3>Prime Language Tech. Center Inc.</h3>
                     </Col>
+                    
+                
 
                     <Col lg='fluid' md='fluid' xs='fluid'>
                         <Link>
@@ -53,9 +58,11 @@ const PrimeNavBar = () => {
                             }} isOnClick={BranchesTab} />
                         </Link>
                     </Col>
-                </Row>        
+                </Row> 
+                  
             </div>
-      </>
+        </div>    
+    </>
     )
 }
 

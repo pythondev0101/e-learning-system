@@ -12,10 +12,20 @@ import PrimeNavBar from './components/PrimeNavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Banner from './components/Banner';
 import MenuIcon from '@material-ui/icons/Menu';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
+    
     <>
       <Router>
         <Switch>
