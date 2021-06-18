@@ -6,8 +6,11 @@
 
 
 
+
+
 @media (min-width:320px)  {
     /* smartphones, iPhone, portrait 480x320 phones */ 
+
     .home-content{
         margin-top: 150px;
     }
@@ -35,15 +38,40 @@
     .ceo-desktop-photo{
         display: none;
     }
-}
-@media (min-width: 667)  { 
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
 }
 
-@media (min-width:1025px) { 
-    /* big landscape tablets, laptops, and desktops */ 
+
+
+
+@media (max-width: 500px){
     .home-content{
-        margin-top: 550px;
+        margin-top: 250px;
+    }
+    .welcome-container h1{
+       color: blue;
+        font-size: 45px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    .ceo-mobile-photo{
+        display: block;
+    }
+
+    .ceo-mobile-photo img{
+        width: 150px;
+    }
+
+    .ceo-desktop-photo{
+        display: none;
+    }
+
+}
+
+@media (min-width: 667)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    .home-content{
+        margin-top: 100px;
     }
     .welcome-container p{
         padding-top: 30px;
@@ -51,6 +79,70 @@
         font-family: 'Montserrat';
     }
     .welcome-container h1{
+        font-size: 50px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: black;
+    }
+
+    .ceo-mobile-photo{
+        display: none;
+    }
+
+    .ceo-desktop-photo{
+        display: block;
+    }
+}
+
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .home-content{
+        margin-top: 100px;
+    }
+    .welcome-container p{
+        padding-top: 30px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+    }
+    .welcome-container h1{
+        font-size: 50px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    .ceo-mobile-photo{
+        display: none;
+    }
+
+    .ceo-desktop-photo{
+        display: block;
+    }
+
+}
+
+@media (min-width: 997px) {
+    .home-content{
+        margin-top: 200px;
+    }
+    .welcome-container h1{
+        font-size: 50px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */  
+    .home-content{
+        margin-top: 200px;
+    }
+    .welcome-container p{
+        padding-top: 30px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+    }
+    .welcome-container h1{
+        color: black;
         font-size: 50px;
         font-family: 'Montserrat';
         font-weight: bold;
@@ -68,4 +160,8 @@
 }
 @media (min-width:1281px) { 
     /* hi-res laptops and desktops */
+
+    .home-content{
+        margin-top: 650px;
+    }
 }
