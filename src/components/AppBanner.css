@@ -1,0 +1,25 @@
+.drawer-content{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 250px;
+}
+
+.drawer-content h1{
+    font-size: 20px;
+}
+
+.drawer-content p{
+    margin-right: 20%;
+    font-size: 12px;
+}
+
+.drawer-container{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.drawer-container img{
+   width: 20px;
+}
+

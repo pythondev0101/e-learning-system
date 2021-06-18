@@ -1,0 +1,16 @@
+button{
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 4px 4px;  
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    button{
+        font-size: 15px;
+    }
+}
+

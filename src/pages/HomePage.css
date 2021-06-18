@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+
+
+@media (min-width:320px)  {
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .home-content{
+        margin-top: 150px;
+    }
+    .welcome-container h1{
+        margin-left: 30px;
+        margin-right: 15px;
+        padding-top: 80px;
+        font-size: 30px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    .welcome-container p{
+        font-size: 12px;
+        font-family: 'Montserrat';
+    }
+
+    .ceo-mobile-photo{
+        display: block;
+    }
+
+    .ceo-mobile-photo img{
+        width: 100px;
+    }
+
+    .ceo-desktop-photo{
+        display: none;
+    }
+}
+@media (min-width: 667)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .home-content{
+        margin-top: 550px;
+    }
+    .welcome-container p{
+        padding-top: 30px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+    }
+    .welcome-container h1{
+        font-size: 50px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+
+    }
+
+    .ceo-mobile-photo{
+        display: none;
+    }
+
+    .ceo-desktop-photo{
+        display: block;
+    }
+
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */
+}

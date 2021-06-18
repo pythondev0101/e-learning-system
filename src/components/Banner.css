@@ -1,0 +1,47 @@
+
+.banner-container img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+@media (min-width:320px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    .banner-content{
+        display: none;
+     }
+     .drawer{
+        display: block;
+    }
+    
+   
+}
+@media (min-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+     
+     .banner-content{
+        margin-top: 5em;
+        margin-right: 40%;
+        margin-left: 10%;
+        color: white;
+        display: block;
+     }
+    
+    .drawer{
+        display: none;
+    }
+    
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
