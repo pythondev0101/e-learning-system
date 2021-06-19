@@ -1,4 +1,21 @@
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+.carousel-container p, h4{
+  font-family: 'Montserrat';
+}
+
+.carousel-container h4{
+  font-weight: bold;
+}
+.carousel-container h1{
+  color: white;
+}
+
+
 @media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */ 
   .carousel-container img{
@@ -9,10 +26,19 @@
     width: 90%;
     margin-left: 5%;
   }
+  .carousel-item{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #D8E3E7;
+  }
   
 }
 @media (min-width: 667)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
 @media (min-width:1025px) { 
@@ -21,13 +47,26 @@
     width: 80%;
     margin-left: 10%;
   }
+  .carousel-container h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: white;
+  }
   
-  
-  .carousel-container img{
+  .carousel-item img{
     width: inherit;
     height: 550px;
   }
+  .carousel-container{
+    padding-bottom: 50px;
+  }
   
+  .carousel-item{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #D8E3E7;
+  }
 }
 @media (min-width:1281px) { 
   /* hi-res laptops and desktops */

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+
+
+@media (min-width:320px)  {
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .card{
+        max-width: 300px;
+        margin: 5%;
+    }
+}
+@media (min-width: 667)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .card{
+        max-width: 300px;
+        margin: 1%;
+    }
+
+    .card img{
+        height: 300px;
+    }
+
+
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */
+}

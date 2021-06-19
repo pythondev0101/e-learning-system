@@ -71,7 +71,7 @@ export default function TemporaryDrawer() {
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
             <div className='drawer-content'>
-                 <h1>Joshua</h1>
+                 <h1>Lorem Ipsum</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis debitis 
                     minus distinctio provident blanditiis deleniti nesciunt? Adipisci 

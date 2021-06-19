@@ -17,7 +17,7 @@ const Banner = () => {
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <div className='banner-content'>
-                            <h1>Joshua</h1>
+                            <h1>Lorem Ipsum</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis debitis 
                                 minus distinctio provident blanditiis deleniti nesciunt? Adipisci 
