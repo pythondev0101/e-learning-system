@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+
+
+@media (min-width:320px)  {
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+
+    .mobile-logo h1{
+        padding-top: 15px;
+        margin-left: -120px;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .mobile-logo img{
+        padding-left: 20px;
+        width: 40%;
+    }
+
+    .mobile-logo{
+        display: block;
+    }
+
+    .desktop-logo{
+        display: none;
+    }
+ 
+
+    .footer-container a{
+        margin-left: 30px;
+        color: white;
+        font-weight: lighter;
+        font-family: 'Montserrat'; 
+    }
+
+    .footer-container h6{
+        font-size: 12px;
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        font-family: 'Montserrat';
+    }
+
+    .footer-container{
+        margin-top: -1px;
+        padding-top: 30px;
+        border-color: rgb(41, 120, 181);
+        width: 100%;
+        background-image: linear-gradient(0deg, rgb(21, 60, 91), rgb(41, 120, 181));
+    }
+
+    .footer-container input, button{
+        margin-left:  30px;
+        margin-bottom: 10px;
+    }
+
+    .footer-container h5{
+        margin-left:  30px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+        font-family: 'Montserrat';
+    }
+
+    .footer-container p{
+        margin-left:  30px;
+        font-size: 12px;
+        padding-right: 20px;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        font-family: 'Montserrat';
+    }
+    .custom-shape-divider-bottom-1624057305 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1624057305 svg {
+        position: relative;
+        display: block;
+        width: calc(144% + 1.3px);
+        height: 100px;
+    }
+    
+    .custom-shape-divider-bottom-1624057305 .shape-fill {
+        fill: #2875B1;
+    }
+
+    
+}
+@media (min-width: 667)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */  
+    .title{
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+    .desktop-logo h1{
+        font-size: 70px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+
+    .footer-container a:link{
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        font-family: 'Montserrat'; 
+    }
+
+    .footer-container h6{
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        font-family: 'Montserrat';
+    }
+
+    .footer-container img{
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .footer-container{
+        margin-top: -1px;
+        padding-top: 30px;
+        border-color: rgb(41, 120, 181);
+        width: 100%;
+        background-image: linear-gradient(0deg, rgb(21, 60, 91), rgb(41, 120, 181));
+    }
+
+    .footer-container h5{
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+        font-family: 'Montserrat';
+    }
+
+    .footer-container p{
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        font-family: 'Montserrat';
+    }
+    .custom-shape-divider-bottom-1624057305 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1624057305 svg {
+        position: relative;
+        display: block;
+        width: calc(144% + 1.3px);
+        height: 198px;
+    }
+    
+    .custom-shape-divider-bottom-1624057305 .shape-fill {
+        fill: #2875B1;
+    }
+
+    .mobile-logo{
+        display: none;
+    }
+
+    .desktop-logo{
+        display: block;
+    }
+
+  
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */
+    
+}
