@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-elearningsystem-dev-114732-authRole",
+      "UnauthRoleArn": "arn:aws:iam::030940214353:role/amplify-elearningsystem-dev-114732-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::030940214353:role/amplify-elearningsystem-dev-114732-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-elearningsystem-dev-114732-deployment",
+      "UnauthRoleName": "amplify-elearningsystem-dev-114732-unauthRole",
+      "StackName": "amplify-elearningsystem-dev-114732",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:030940214353:stack/amplify-elearningsystem-dev-114732/4083c090-d631-11eb-908d-0a07f5f3adf6",
+      "AmplifyAppId": "d1u8ndgdy87trh"
+    }
+  }
+}
