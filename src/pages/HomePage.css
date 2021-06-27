@@ -1,3 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
+
 .proportions-box-square {
     position: relative;
     padding: 100% 0 0 !important;
@@ -189,8 +200,7 @@
      color: white;
      font-family: 'Montserrat', sans-serif;
      font-size: 5em;
-     -webkit-text-stroke-width: 1px;
-     -webkit-text-stroke-color: black;
+     
  }
  
  .sub-title{
@@ -230,6 +240,7 @@
  }
 
  .custom-shape-divider-bottom-1624662396 {
+     margin-top: 150px;
     margin-bottom: -3px;
     width: 100%;
     overflow: hidden;
@@ -308,3 +319,4 @@
 .custom-shape-divider-top-1624664656 .shape-fill {
     fill: #878ECD;
 }
+

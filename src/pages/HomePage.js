@@ -1,19 +1,7 @@
-import React from 'react'
 import './HomePage.css';
-
-var Scroll = require('react-scroll');
-
-var Link      = Scroll.Link;
-var Button    = Scroll.Button;
-var Element   = Scroll.Element;
-var Events    = Scroll.Events;
-var scroll    = Scroll.animateScroll;
-var scrollSpy = Scroll.scrollSpy;
-
-
-
-
-
+import React, { Component, useRef, useEffect } from "react";
+import { render } from "react-dom";
+import { Link } from 'react-router-dom';
 
 const ceoPhoto = require('../assets/images/ceo_photo_2.png');
 const hanguel = require('../assets/images/hangeul.png');
@@ -22,95 +10,22 @@ const lorem = require('../assets/images/lorem_logo.png');
 const underMaintenance = require('../assets/images/under_maintenance.png');
 
 
+// Prime Assets
+
+const actual_class_1 = require('../assets/prime_assets/actual_class_1.jpg');
+const departure_1 = require('../assets/prime_assets/departure_1.jpg');
+const graduation_1 = require('../assets/prime_assets/graduation_1.jpg');
+const orientation_1 = require('../assets/prime_assets/orientation_1.jpg');
+const proof_of_gallery  = require('../assets/prime_assets/proof_of_gallery.jpg');
+const skill_test = require('../assets/prime_assets/skill_test_1.jpg');
 
     
 
-class HomePage extends React.Component{
+const HomePage = () => {
     
-
-    constructor(props) {
-        super(props);
-        this.scrollToTop = this.scrollToTop.bind(this);
-      }
-    
-      componentDidMount() {
-    
-        Events.scrollEvent.register('begin', function () {
-          console.log("begin", arguments);
-        });
-    
-        Events.scrollEvent.register('end', function () {
-          console.log("end", arguments);
-        });
-    
-        scrollSpy.update();
-    
-      }
-      scrollToTop() {
-        scroll.scrollToTop();
-      }
-      componentWillUnmount() {
-        Events.scrollEvent.remove('begin');
-        Events.scrollEvent.remove('end');
-      }
-    
-   render(){
     return (
-        <>  
-        <nav class="navbar sticky-top nav-background border border-left-0 border-right-0 border-top-0 navbar navbar-dark navbar-expand-lg py-lg-1"> 
-            <div class="container"> 
-                <a class="font-weight-bold navbar-brand text-uppercase" href="#">Logo</a> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-4" aria-controls="navbarNavDropdown-4" aria-expanded="false" aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span> 
-                </button>                 
-                <div class="collapse navbar-collapse " id="navbarNavDropdown-4"> 
-                    <ul class="navbar-nav"> 
-                        <li class="nav-item">
-                        
-                            <a class="nav-link px-lg-3 py-lg-4" href="#">Home</a>
-                        
-                        </li>                         
-                        <li class="nav-item dropdown">
-                            <a class="nav-link px-lg-3 py-lg-4" href="#">About Us</a>                      
-                        </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a> 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                <a class="dropdown-item" href="#">LEARN IN KOREA</a> 
-                            </div>                             
-                        </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Testimonies</a> 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                <a class="dropdown-item" href="#">Our Proof of Gallery</a>
-                                <a class="dropdown-item" href="#">Orientation</a>
-                                <a class="dropdown-item" href="#">Actual Class</a>
-                                <a class="dropdown-item" href="#">Graduation</a>
-                                <a class="dropdown-item" href="#">Skill test</a>
-                                <a class="dropdown-item" href="#">Departure in Sout Korea</a>
-                            </div>                             
-                        </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a> 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            </div>                             
-                        </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Branches</a> 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Cebu</a>
-                                <a class="dropdown-item" href="#">Tacloban</a>
-                                <a class="dropdown-item" href="#">Calbayog</a>
-                                <a class="dropdown-item" href="#">Bohol</a>
-                                <a class="dropdown-item" href="#">Palawan</a>
-                            </div>                             
-                        </li>
-                        
-                    </ul>                     
-                    <a class="btn btn-light ml-lg-auto pl-4 pr-4 rounded-pill" href="#">Log In</a>  
-                </div>                 
-            </div>             
-        </nav>
+        <> 
+        <div className=''>
 
         {/* Banner */}
         <div class="header-background pb-5 pt-5 text-white">
@@ -131,8 +46,7 @@ class HomePage extends React.Component{
 
 
         {/* About Section */}
-        <div class="about border border-left-0 border-right-0 border-top-0 pb-5 pt-5 text-center"
-        id="about">
+        <div class="about border border-left-0 border-right-0 border-top-0 pb-5 pt-5 text-center" id="about">
         <div class="container pb-5 pt-5">
             <div class="row">
                 <div class="col-lg-12 ml-auto mr-auto">
@@ -145,7 +59,9 @@ class HomePage extends React.Component{
                         </p>
                         <h5 data-aos="zoom-in-up" data-aos-duration="4000" class="h5 mb-4 text-dark">WELCOME to our TEAM
                         </h5>
-                    <a data-aos="zoom-in" data-aos-duration="2000" class="btn btn-danger pl-4 pr-4 rounded-pill" href="#">Learn More</a>
+                    <Link to='/about-us'>
+                        <a data-aos="zoom-in" data-aos-duration="2000" class="btn btn-danger pl-4 pr-4 rounded-pill" href="#">Learn More</a>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -159,11 +75,11 @@ class HomePage extends React.Component{
             <h2 class="h1 mb-4 text-center">Our Testimonies</h2>
             <div class="align-items-center row">
             <div class="col-lg-4 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1188.238" height="500.402" viewBox="0 0 1188.238 884.402" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
+                <img src={proof_of_gallery.default} width="1188.238" height="500.402" viewBox="0 0 1188.238 884.402" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div data-aos="fade-right" class="col-lg-6 pb-3 pt-3">
                     <div class="pb-3 pt-3">
-                        <h3 class="text-dark">Proof of Gallery</h3>
+                        <h3 class="text-primary">Proof of Gallery</h3>
                         <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                             volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                             vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -172,12 +88,12 @@ class HomePage extends React.Component{
             </div>
             <div data-aos="fade-left" class="align-items-center row">
             <div class="col-lg-4 offset-lg-2 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1154.563" height="500.865"
+                <img src={orientation_1.default} width="1154.563" height="500.865"
                     viewBox="0 0 1154.563 886.865" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
-                    <h3 class="text-dark">Orientation</h3>
+                    <h3 class="text-primary">Orientation</h3>
                     <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                         vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -186,12 +102,12 @@ class HomePage extends React.Component{
         </div>
         <div class="align-items-center row">
             <div class="col-lg-4 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1171.07" height="500.585"
+                <img src={actual_class_1.default} width="1171.07" height="500.585"
                     viewBox="0 0 1171.07 884.585" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div data-aos="fade-right" class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
-                    <h3 class="text-dark">Actual Class</h3>
+                    <h3 class="text-primary">Actual Class</h3>
                     <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                         vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -200,12 +116,12 @@ class HomePage extends React.Component{
         </div>
         <div class="align-items-center row">
             <div class="col-lg-4 offset-lg-2 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1255.003" height="500.707"
+                <img src={graduation_1.default} width="1255.003" height="500.707"
                     viewBox="0 0 1255.003 870.707" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div data-aos="fade-left" class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
-                    <h3 class="text-dark">Graduation</h3>
+                    <h3 class="text-primary">Graduation</h3>
                     <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                         vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -214,12 +130,12 @@ class HomePage extends React.Component{
         </div>
         <div class="align-items-center row">
             <div class="col-lg-4 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1175.976" height="500.199"
+                <img src={skill_test.default} width="1175.976" height="500.199"
                     viewBox="0 0 1175.976 864.199" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div class="col-lg-6 pb-3 pt-3">
                 <div data-aos="fade-right" class="pb-3 pt-3">
-                    <h3 class="text-dark">Skill Test</h3>
+                    <h3 class="text-primary">Skill Test</h3>
                     <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                         vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -228,12 +144,12 @@ class HomePage extends React.Component{
         </div>
         <div class="align-items-center row">
             <div class="col-lg-4 offset-lg-2 pb-3 pt-3">
-                <img src={underMaintenance.default} width="1329.507" height="500.707"
+                <img src={departure_1.default} width="1329.507" height="500.707"
                     viewBox="0 0 1329.507 825.707" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
             </div>
             <div class="col-lg-6 pb-3 pt-3">
                 <div data-aos="fade-left" class="pb-3 pt-3">
-                    <h3 class="text-dark">Departure in South Korea</h3>
+                    <h3 class="text-primary">Departure in South Korea</h3>
                     <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
                         vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
@@ -328,6 +244,7 @@ class HomePage extends React.Component{
 
         {/* Sevice Section */}
 
+        
         <div class="custom-shape-divider-bottom-1624662396">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -407,6 +324,7 @@ class HomePage extends React.Component{
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
+        
 
 
         {/* End of Service Section */}
@@ -472,7 +390,7 @@ class HomePage extends React.Component{
                 </div>
             </div>
             <div class="pb-4 pt-4 text-center">
-                <a class="btn btn-danger primary-color pl-4 pr-4 rounded-pill" href="#">View More</a>
+                <a class="btn btn-primary primary-color pl-4 pr-4 rounded-pill" href="#">View More</a>
             </div>
         </div>
     </div>
@@ -483,9 +401,10 @@ class HomePage extends React.Component{
         </svg>
     </div>
         {/* End of Branches */}
+            </div>
         </>
     )
-   }
 }
 
 export default HomePage
+
