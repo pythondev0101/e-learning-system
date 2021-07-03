@@ -15,6 +15,6 @@ code {
 
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
 }

@@ -45,14 +45,17 @@ const PrimeNavBar2 = () => {
                         </div>                             
                     </li>
                     <li class="nav-item dropdown"> 
-                        <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                        </div>                             
+                        <Link to='/contact-us'>
+                            <a class="nav-link px-lg-3 py-lg-4" href="#" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                        </Link>
+                                                  
                     </li>
                     <li class="nav-item dropdown"> 
                         <a class="nav-link px-lg-3 py-lg-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Branches</a> 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Cebu</a>
+                            <Link to='/branches'>
+                                <a class="dropdown-item" href="#">Cebu</a>
+                            </Link>
                             <a class="dropdown-item" href="#">Tacloban</a>
                             <a class="dropdown-item" href="#">Calbayog</a>
                             <a class="dropdown-item" href="#">Bohol</a>
