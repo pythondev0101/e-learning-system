@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'OpenSans';
+    src: url('/src//assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
 }
 
 
@@ -9,7 +9,7 @@
 }
 
 .story-div h1, h3, p{
-    font-family: 'Montserrat';
+    font-family: 'OpenSans';
     
 }
 

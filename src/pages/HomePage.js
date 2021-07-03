@@ -50,12 +50,20 @@ const HomePage = () => {
         <div class="container pb-5 pt-5">
             <div class="row">
                 <div class="col-lg-12 ml-auto mr-auto">
-                    <h1 data-aos="zoom-in">Hello There!!!</h1>
-                    <p data-aos="zoom-in-up" data-aos-duration="3000" class="mb-4">We are glad that you want to know us better! 
-                        PRIME KOREAN LANGUAGE AND REVIEW CENTER. would like to welcome you all , in case of queries feel free to ask anything you want. We want to make sure to give you the best service we could offer.
-                        In the meantine to give you a little context about the company and what's important to us.
-                        Our company IS A LANGUAGE TRAINING CENTER THAT PROVIDES  KOREAN LANGUAGE TRAINING TO PASS THE KOREAN LANGUAGE TEST PRESCRIBED BY THE HRD KOREA( HUMAN RESOURCES DEVELOPMENT OF KOREA) IN COORDINATION WITH POEA( PHILIPPINE OVERSEAS EMPLOYMENT ADMINISTRATION),WITH REGISTRATION NO. CS201817522 under Security and exchange commision.The company is a corporation duly organized and existing by virtue of Philippine laws. It is one of the many Service Provider Language Companies operating in Luzon, Visayas, Mindanao and currently has 7 branches actively serving and continually giving assistance to Filipinos.
-                        Again, we welcome you all, If you have questions prioINTENSIVEr to company's details, kindly send us an email 
+                    <h1 data-aos="zoom-in">WELCOME TO PRIME KOREAN LANGUAGE AND REVIEW CENTER INC.</h1>
+                    <p data-aos="zoom-in-up" data-aos-duration="3000" class="mb-4">
+                        IT'S GREAT TO MEET YOU HERE!
+
+                        I WANT TO WELCOME EVERYONE ON THIS SITE
+
+                        BECAUSE YOU WANT TO PREPARE FOR YOUR FUTURE, KNOWING OTHER LANGUAGE AND APPRECIATING OTHER CULTURES, THESE ARE THE SKILLS THAT LAST A LIFETIME.
+                        WHETHER YOUR INTEREST IS WORLD AFFAIRS LIKE KDRAMAS OR KPOPS, TECHNOLOGY, BUSINESS, FACTORY WORKS OR JUST BROADENING YOUR MIND IN LEARNING KOREAN LANGUAGE WE WILL LEAVE WITH KNOWLEDGE AND UNDERSTANDING THAT COULD PROBABLY HELP YOU A LOT.
+                        SO IF YOU'RE LOOKING FOR AN EASY SECOND LANGUAGE TO LEARN, YOU ARE ON THE RIGHT TRACK, PRIME LTCI IS OFFERING THE BEST SERVICE FOR THOSE INTERESTED TO LEARN “HANGUL”. LEARNING KOREAN LANGUAGE GIVES YOU ACCESS TO A WONDERFULLY AMAZING AND INTERESTING GROUP OF INDIVIDUALS, SOUTH KOREA IS GENERALLY REGARD AS SOME OF THE MOST TECHNOLOGICALLY WELL ADJUSTED PEOPLE IN THE WORLD.
+
+                        PRIME KOREAN LANGUAGE AND REVIEW CENTER OFFERS A LOT OF SERVICES LIKE LEARNING HOW TO SPEAK KOREAN AS FLUENT AS THE NATIVE KOREANS, IMPROVING YOUR LISTENING SKILLS, WRITING AND READING, WE ARE ALSO ASSISTING FILIPINO’S TO PASS THE EPS-TOPIK EXAM FOR THOSE WHO WANTS TO WORK IN SOUTH KOREA AS FACTORY WORKERS. WE ARE HELPING FILIPINOS TO ACHIEVE THEIR DREAMS AND FULLFILL THEIR GOALS TO LIFT UP THE STATUS OF THEIR LIVING.
+                        WE WANT TO HELP YOU GUYS SEEING AND HAVING A PROGRESSIVE FUTURE WITH US 
+                        LEARN KOREAN LANGUAGE WITH US!!!!
+ 
                         </p>
                         <h5 data-aos="zoom-in-up" data-aos-duration="4000" class="h5 mb-4 text-dark">WELCOME to our TEAM
                         </h5>
@@ -72,7 +80,7 @@ const HomePage = () => {
         {/* Testimonies Section */}
         <div data-aos="zoom-in" class="bg-light border border-left-0 border-right-0 border-top-0 pb-5 pt-5" id="testimonies">
             <div class="testimony container pb-5 pt-5">
-            <h2 class="h1 mb-4 text-center">Our Testimonies</h2>
+            <h2 class="h1 mb-5 text-center">Our Testimonies</h2>
             <div class="align-items-center row">
             <div class="col-lg-4 pb-3 pt-3">
                 <img src={proof_of_gallery.default} width="1188.238" height="500.402" viewBox="0 0 1188.238 884.402" class="col-8 col-lg-12 d-block img-fluid ml-auto mr-auto"/>
@@ -80,9 +88,11 @@ const HomePage = () => {
             <div data-aos="fade-right" class="col-lg-6 pb-3 pt-3">
                     <div class="pb-3 pt-3">
                         <h3 class="text-primary">Proof of Gallery</h3>
-                        <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                            volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                            vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                        <p class="font-weight-light mb-0">
+                            Prime KLC students who have gone KOREAN LANGUAGE TRAINING have passed the EPS-TOPIK exam 
+                            and got hired by Korean employers. PRIME KLC is assisting Filipinos who are interested to
+                            work as factory workers in SOUTH KOREA. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -94,9 +104,12 @@ const HomePage = () => {
             <div class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
                     <h3 class="text-primary">Orientation</h3>
-                    <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                        vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                    <p class="font-weight-light mb-0">
+                    Orientation is conducted as the first step, for those interested applicants they must undergo an orientation 
+                    to know the step by step process. Schedule of orientation is conducted regularly at least 2 times a week in different branches. 
+                    Clients who are interested with this program must send the personal 
+                    details Before attending the orientation to know the nearest branch where they can join the said 
+                    </p>
                 </div>
             </div>
         </div>
@@ -108,9 +121,15 @@ const HomePage = () => {
             <div data-aos="fade-right" class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
                     <h3 class="text-primary">Actual Class</h3>
-                    <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                        vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                    <p class="font-weight-light mb-0">
+                        We offer actual classes of KOREAN LANGUAGE Training
+                        Schedule of classes for weekdays 17 days Monday to Friday at least 3 hours a day with 3 sessions 
+                        Morning (9:00am to 12:00nn) 
+                        Afternoon class ( 1:00pm to 4:00pm)
+                        Night class ( 6:00pm to 9:00pm)
+                        Sunday class 
+                        10 consecutive Sundays ( 9:00am to 4:00pm)
+                    </p>
                 </div>
             </div>
         </div>
@@ -122,9 +141,10 @@ const HomePage = () => {
             <div data-aos="fade-left" class="col-lg-6 pb-3 pt-3">
                 <div class="pb-3 pt-3">
                     <h3 class="text-primary">Graduation</h3>
-                    <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                        vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                    <p class="font-weight-light mb-0">
+                    Giving of Certificates to all the students who have successfully completed the KOREAN LANGUAGE TRAINING/KOREAN CLASS.
+                    Acknowledging those students who are dedicated on their training, Giving of awards/recognition to those TOP SCORERS 
+                    </p>
                 </div>
             </div>
         </div>
@@ -136,9 +156,12 @@ const HomePage = () => {
             <div class="col-lg-6 pb-3 pt-3">
                 <div data-aos="fade-right" class="pb-3 pt-3">
                     <h3 class="text-primary">Skill Test</h3>
-                    <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                        vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                    <p class="font-weight-light mb-0">
+                        PRIME KLC is conducted an actual skill test training  before attending the  SKILL TEST under HRD KOREA 
+                        It is conducted after passing the EPS-TOPIK EXAM, In preparation of the  SKILL TEST in Manila
+                        Students will undergo an actual training, There is an actual interview 
+                        with the TEACHER/INSTRUCTOR and the STUDENT and practicing different task in just 1 second. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -150,9 +173,10 @@ const HomePage = () => {
             <div class="col-lg-6 pb-3 pt-3">
                 <div data-aos="fade-left" class="pb-3 pt-3">
                     <h3 class="text-primary">Departure in South Korea</h3>
-                    <p class="font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi volutpat interdum sem,
-                        vitae aliquam odio tempor blandit.Lorem ipsum dolor sit amet.</p>
+                    <p class="font-weight-light mb-0">
+                        After Passing the step by step process, PRIME KLC assisted the students financially until 
+                        they reach SOUTH KOREA, We provide a free MALITA with financial assistance up to 50,000. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -163,15 +187,18 @@ const HomePage = () => {
 
         {/* Students tesimonies */}
         <div data-aos="zoom-in" class="bg-light pb-5 pt-5 text-secondary">
-        <div class="container pb-3 pt-3">
+        <div class="container pb-5 pt-3">
         <h5 class="text-center text-danger">Testimonials</h5>
+        <Link to='/about-us'>
+         <a data-aos="zoom-in" data-aos-duration="2000" class="btn btn-primary text-white pl-4 pr-4 rounded-pill" href="#">Read More</a>
+        </Link>
         <h2 class="h1 mb-4 text-center text-dark">What our clients say</h2>
         <div data-aos="fade-right" id="carousel7" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="align-items-center row">
                         <div class="col-lg-4 pb-3 pt-3 text-center">
-                            <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=360&h=360&fit=crop"
+                            <img src="https://image.flaticon.com/icons/png/512/194/194931.png"
                                 class="img-fluid rounded-circle"/>
                         </div>
                         <div class="col-lg-8 pb-3 pt-3">
@@ -180,19 +207,25 @@ const HomePage = () => {
                                 <path
                                     d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z" />
                             </svg>
-                            <p class="font-weight-light h5 mb-4">Aliqua id fugiat nostrud irure ex duis ea quis id
-                                quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor
-                                enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id
-                                deserunt nisi.</p>
-                            <h4 class="font-weight-bold mb-1 text-danger">Kathryn Murphy</h4>
-                            <p class="font-weight-bold testimonial_pos">Chief Technology Officer</p>
+                            <p class="font-weight-light h5 mb-4">
+                            Thank you and i am proud to be PRIME KLC family, kayo ang naging tulay sa pagtupad ko sa aking mga 
+                            pangarap sa buhay at salamat din sa walang sawang supporta hanggang ngayon. 2yrs and 1month na ako 
+                            ngayong nagtatrabaho dito sa SOUTH KOREA and still fighting for the future goals. sa mga kababayan ko jan na 
+                            nagbabalak o gustong pumunta dito ito lang ang masasabi ko ituloy at pagsikapan niyo po dahil malaki talaga ang 
+                            mababago sa buhay niyo at ilagay niyo palagi sa isip niyo na 
+                            "NAKAYA KO NGA KAYO PA" kaya laban lang tiwala sa sarili at dasal lang palagi sa taas <br/>
+                            #IamProudToBePrimeKLCFamily <br/> #감사함니다PrimeKLC
+ 
+                            </p>
+                            <h4 class="font-weight-bold mb-1 text-danger">DIONESIO NATINGGA</h4>
+                            <p class="font-weight-bold testimonial_pos">KLT15</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="align-items-center row">
                         <div class="col-lg-4 pb-3 pt-3 text-center">
-                            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDd8fGNhdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=360&h=360&fit=crop"
+                            <img src="https://www.pngitem.com/pimgs/m/546-5468612_banner-library-college-vector-graduated-student-transparent-student.png"
                                 class="img-fluid rounded-circle" />
                         </div>
                         <div class="col-lg-8 pb-3 pt-3">
@@ -201,18 +234,30 @@ const HomePage = () => {
                                 <path
                                     d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z" />
                             </svg>
-                            <p class="font-weight-light h5 mb-4">Amet minim mollit non deserunt ullamco est sit
-                                aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                                Exercitation veniam consequat sunt nostrud amet.</p>
-                            <h4 class="font-weight-bold mb-1 text-danger">Dianne Russell</h4>
-                            <p class="font-weight-bold">Founder</p>
+                            <p class="font-weight-light h5 mb-4">
+                            Maraming salamat sa prime klc,
+                            Kayo ang naging tulay ko upang makapag work dito sa korea.
+                            Ngayon po ay 2 years and 6 months na po akong nag tatrabaho dito sa korea as factory worker and waiting po for extension  this coming  December if ever. na ma extend...
+                            Salamat po ulit kung di dahil sa inyo wala po ako dito sa korea salamt  din sa mga teacher na nagtyatyagang magturo sa amin...at saka  ang masasabi kolang sa mga klt aspirants or mga eps students na nag aaral or mag aaral or tapos ng mag aral ..is magsikap at magtyaga lang kayo..kasi..kung para talga yan sa iyo  or inyo  no matter what happen..kahit bumagsak kaman ng paulit2x....makakapasa  karin  nian sa huli..wag kang mawalan ng pag asa...kasi..may mga kakilala din  ako  ditong..bumagsak  ng ilang  beses..nag try  parin  cya  at sa wakas..nakapasa..at ..natupad  ung mga pangarap  nia para sa  family  nia...at sa mga  nakapasa  na waiting..pa..mag antay2x lang muna  kayo.dyan  kasi..isa ang ating bansa na naka band pa   sa korea  gawa ng covid..so..while waiting  mag aral  parin  kayo dyan para  pagdating dito  ay.bihasa  na kayo sa kanilang language..so yan muna po😊😊 
+                            <br />
+                            #PrimeKLCYeoja
+                            <br />
+                            #화이팅 
+                            <br />
+                            #감사합니다PrimeKLC
+                            <br />
+                            #IamProudToBePrimeKLCFamily
+
+                            </p>
+                            <h4 class="font-weight-bold mb-1 text-danger">LESLIE GALENZOGA</h4>
+                            <p class="font-weight-bold">STUDENT</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="align-items-center row">
                         <div class="col-lg-4 pb-3 pt-3 text-center">
-                            <img src="https://images.unsplash.com/photo-1517101724602-c257fe568157?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDZ8fHBhcnJvdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=360&h=360&fit=crop"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtCsWMSX0MDVGYPE13fKXNFNsTHN1OmO441pRMRmM2drbIvaOCGCPPkyrHRXMYXyAuKI&usqp=CAU"
                                 class="img-fluid rounded-circle" />
                         </div>
                         <div class="col-lg-8 pb-3 pt-3">
@@ -221,12 +266,40 @@ const HomePage = () => {
                                 <path
                                     d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z" />
                             </svg>
-                            <p class="font-weight-light h5 mb-4">Aliqua id fugiat nostrud irure ex duis ea quis id
-                                quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor
-                                enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id
-                                deserunt nisi.</p>
-                            <h4 class="font-weight-bold mb-1 text-danger">Darrell Steward</h4>
-                            <p class="font-weight-bold">Administrative Manager</p>
+                            <p class="font-weight-light h5 mb-4">
+                            Maraming salamat sa Prime klc sa tulong at suporta sa pagtupad ko NG PAngarap Kung makapag Korea..Malapit na 
+                            rin akong mag 2 years dito sa Korea.. Ang Bilis lang Ng Panahon dati nangangarap lang din ako katulad NG iba at 
+                            ngayon andito na ako... Kahit 2 days lang ako noon nag practice NG assembly sa skills test sa Prime ay Mas madali ko syang nagawa Doon sa actual na kasi maganda yong mga practice materials NG Prime.. Payo ko lang sa mga nagsisimula palang ay dapat e master niyo Muna mga Korean letters at Kung paano sila basahin tsaka pagkatapos memorize NG madaming vocabulary... Mas madali mong MA memorize ang mga vocabs Kung bihasa kanang magbasa....
+                            Tapos basahin mo Yong Libro na ibibigay Nila at yong audio pabalik balik 
+                            </p>
+                            <h4 class="font-weight-bold mb-1 text-danger">MAR JUN AMISTOSO</h4>
+                            <p class="font-weight-bold">Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="align-items-center row">
+                        <div class="col-lg-4 pb-3 pt-3 text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsKcxumVNNxnCK86WbnZEtSsqNWBai2YHWLAUpRhQDYTAlczUD7_Ux1QLMnESAapGEQM&usqp=CAU"
+                                class="img-fluid rounded-circle" />
+                        </div>
+                        <div class="col-lg-8 pb-3 pt-3">
+                            <svg viewBox="0 0 24 24" fill="currentColor" height="64" width="64"
+                                class="mb-3 text-danger">
+                                <path
+                                    d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z" />
+                            </svg>
+                            <p class="font-weight-light h5 mb-4">
+                            Maraming salamat sa prime klc,
+                            Kayo ang naging tulay ko upang makapag work dito sa korea.
+                            Ngayon po ay 1 year and 6 months na po akong nag tatrabaho dito sa korea as factory worker.
+                            Kung di dahil sa inyo wala po ako dito sa korea,
+                            I am proud to be prime klc family.
+                            Kamsahamnida
+
+                            </p>
+                            <h4 class="font-weight-bold mb-1 text-danger">WALLY CATALAN</h4>
+                            <p class="font-weight-bold">Student</p>
                         </div>
                     </div>
                 </div>
@@ -235,6 +308,7 @@ const HomePage = () => {
                 <li data-target="#carousel7" data-slide-to="0" class="active bg-danger"></li>
                 <li data-target="#carousel7" data-slide-to="1" class="bg-danger"></li>
                 <li data-target="#carousel7" data-slide-to="2" class="bg-danger"></li>
+                <li data-target="#carousel7" data-slide-to="3" class="bg-danger"></li>
             </ol>
         </div>
     </div>

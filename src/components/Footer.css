@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'OpenSans';
+    src: url('/src/assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
 }
 
 
@@ -15,7 +15,7 @@
         font-size: 16px;
         color: white;
         font-weight: bold;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .title{
@@ -40,7 +40,7 @@
         margin-left: 30px;
         color: white;
         font-weight: lighter;
-        font-family: 'Montserrat'; 
+        font-family: 'OpenSans'; 
     }
 
     .footer-container h6{
@@ -48,7 +48,7 @@
         padding-left: 20px;
         color: rgba(255, 255, 255, 0.8);
         font-weight: lighter;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .footer-container{
@@ -69,7 +69,7 @@
         text-decoration: underline;
         font-weight: bold;
         color: white;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .footer-container p{
@@ -78,7 +78,7 @@
         padding-right: 20px;
         color: rgba(255, 255, 255, 0.8);
         font-weight: lighter;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
     .custom-shape-divider-bottom-1624057305 {
         width: 100%;
@@ -118,19 +118,19 @@
         font-size: 70px;
         color: white;
         font-weight: bold;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .footer-container a:link{
         color: rgba(255, 255, 255, 0.8);
         font-weight: lighter;
-        font-family: 'Montserrat'; 
+        font-family: 'OpenSans'; 
     }
 
     .footer-container h6{
         color: rgba(255, 255, 255, 0.8);
         font-weight: lighter;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .footer-container img{
@@ -150,13 +150,13 @@
         text-decoration: underline;
         font-weight: bold;
         color: white;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
 
     .footer-container p{
         color: rgba(255, 255, 255, 0.8);
         font-weight: lighter;
-        font-family: 'Montserrat';
+        font-family: 'OpenSans';
     }
     .custom-shape-divider-bottom-1624057305 {
         width: 100%;
