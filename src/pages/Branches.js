@@ -3,7 +3,11 @@ import './Animate.css';
 import './Pretty.css';
 import './aos.css';
 
-const Branches = ({title, photo, location, schedule, info}) => {
+const Branches = ({title, photo, address, landmark, maplink, info}) => {
+
+
+
+
     return (
     <>
   
@@ -14,7 +18,7 @@ const Branches = ({title, photo, location, schedule, info}) => {
         <h2 class="section-title">{title}</h2>
       </div>
      
-      <div class="col-12 mb-4">
+      <div data-aos="zoom-in" data-aos-duration="3000" class="col-12 mb-4">
         <img src={photo} alt="event thumb" class="img-fluid w-100"/>
       </div>
     </div>
@@ -26,8 +30,8 @@ const Branches = ({title, photo, location, schedule, info}) => {
             <div class="d-flex align-items-center">
               <i class="ti-location-pin text-primary icon-md mr-2" src='http://cdn.onlinewebfonts.com/svg/img_292414.png'></i>
               <div class="text-left">
-                <h6 class="mb-0">LOCATION</h6>
-                <p class="mb-0">{location}</p>
+                <h6 class="mb-0">Address</h6>
+                <p class="mb-0">{address}</p>
               </div>
             </div>
           </li>
@@ -35,8 +39,8 @@ const Branches = ({title, photo, location, schedule, info}) => {
             <div class="d-flex align-items-center">
               <i class="ti-time text-primary icon-md mr-2"></i>
               <div class="text-left">
-                <h6 class="mb-0">Schedule</h6>
-                <p class="mb-0">{schedule}</p>
+                <h6 class="mb-0">Landmark</h6>
+                <p class="mb-0">{landmark}</p>
               </div>
             </div>
           </li>
@@ -50,6 +54,8 @@ const Branches = ({title, photo, location, schedule, info}) => {
         <div class="border-bottom border-primary"></div>
       </div>
     </div>
+
+    
     
     <div class="row">
       <div class="col-12 mb-50">

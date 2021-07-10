@@ -16,6 +16,130 @@ VERSION:	Versoin Number
   font-style: normal;
 }
 
+.navigation {
+  background: linear-gradient(to right, transparent 50%, #ffbc3b 50%);
+  transition: .2s ease;
+}
+
+
+
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-item::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  content: "";
+  background: #fff;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.nav-item:hover::before, .nav-item.active::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 40px 0px;
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 20px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 2px 5px #0000000d;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: unset;
+            transform-origin: unset;
+  }
+}
+
+.navbar .dropdown-menu.show {
+  visibility: hidden;
+}
+
+@media (max-width: 991px) {
+  .navbar .dropdown-menu.show {
+    visibility: visible;
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .navbar .dropdown-item {
+    text-align: center;
+  }
+}
+
+.navbar .dropdown-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.navbar .dropdown-item:hover {
+  color: #0061A8;
+  background: transparent;
+}
 
 
 
@@ -78,12 +202,12 @@ h6, .h6 {
 /* Button style */
 
 ::-moz-selection {
-  background: #ffcd6e;
+  background: #0061A8;
   color: #fff;
 }
 
 ::selection {
-  background: #ffcd6e;
+  background: #0061A8;
   color: #fff;
 }
 
@@ -94,7 +218,7 @@ h6, .h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFDC11;
+  background-color: #0061A8;
   z-index: 999999;
   display: flex;
   align-items: center;
@@ -132,15 +256,15 @@ select:focus {
 }
 
 a:hover {
-  color: #ffbc3b;
+  color: #0061A8;
 }
 
 a.text-primary:hover {
-  color: #ffbc3b !important;
+  color: #0061A8 !important;
 }
 
 a.text-light:hover {
-  color: #ffbc3b !important;
+  color: #0061A8 !important;
 }
 
 h4 {
@@ -148,7 +272,7 @@ h4 {
 }
 
 a h4:hover {
-  color: #ffbc3b;
+  color: #0061A8;
 }
 
 .slick-slide {
@@ -802,4 +926,12 @@ link:focus,
 
 .page-title-section{
     background-image: url('/src/assets/images/feature.jpg');
+}
+
+.card-branch{
+  background-color: #0A1931;
+}
+
+.chover-shadow:hover{
+  border-color: #0061A8;
 }

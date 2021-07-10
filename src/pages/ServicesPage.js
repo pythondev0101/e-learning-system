@@ -1,154 +1,117 @@
-import React, {useState} from 'react'
-import { Container,Row,Col } from 'react-bootstrap'
-import CustomLeftTile from '../components/CustomLeftTile';
-import CustomRightTile from '../components/CustomRightTile';
-
-
-import {
-  TransitionGroup,
-  CSSTransition
-} from "react-transition-group";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-  useLocation,
-  useParams,
-  NavLink
-} from "react-router-dom";
-
-export default function AnimationRouter() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="learn-korea" />
-        </Route>
-        <Route path="*">
-          <ServicesPage />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
-
-
-const koreanLang1 = require('../assets/images/korean_lang.png');
-const koreanLang2 = require('../assets/images/korean_culture.jpg');
-const workKorea1 = require('../assets/images/work1.jpg');
-const workKore2 = require('../assets/images/work2.jpg')
+import React from 'react'
+import './Pretty.css';
 
 const ServicesPage = () => {
-    let location = useLocation();
+  return (
+    <>
+      <section class="page-title-section overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="list-inline custom-breadcrumb">
+                <li class="list-inline-item"><a class="h2 text-primary font-secondary">Services</a></li>
+                <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+              </ul>
+              <p class='text-white'>
+              On the other hand, we denounce with righteous indignation and dislike men who are 
+              so beguiled and demoralized by the charms of pleasure of the moment, so blinded by 
+              desire, that they cannot foresee the pain and trouble that are bound to ensue; and 
+              equal blame belongs to those who fail in their duty through weakness of will, which 
 
-    
-    const linkControllers = {
-        learnKoreaLink: true,
-        workKoreaLink: false,
-    }
-
-    const[pageController, navigate] = useState(linkControllers);
-
-    
-
-    return (
-        <Container>
-            <Row lg={12} style={{marginLeft: 50}}>
-                <Col lg={1}></Col>
-                <Col lg={5}>
-                    <Link to='/learn-korea'>
-                        <h3 className='font-face' style={{
-                            fontWeight: 'bold',
-                            textDecoration: pageController.learnKoreaLink ?  'underline' : '',
-                            fontSize: 30,
-                            color: pageController.learnKoreaLink ? 'rgb(41, 120, 181)' : 'rgba(41, 120, 181, 0.4)',
-                            cursor: 'pointer',
-                        }}
-
-                        onClick={()=>{
-                            navigate({
-                            learnKoreaLink: true,
-                            workKoreaLink: false,
-                            })
-                        }}
-
-                        >Learn Korea</h3>
-                    </Link>
-                </Col>
-                <Col lg={5}>
-                    <Link to='/work-korea'>
-                        <h3 className='font-face' style={{
-                            fontWeight: 'bold',
-                            textDecoration: pageController.workKoreaLink ?  'underline' : '',
-                            fontSize: 30,
-                            color: pageController.workKoreaLink ? 'rgb(41, 120, 181)' : 'rgba(41, 120, 181, 0.4)',
-                            cursor: 'pointer',
-                        }}
-
-                        onClick={()=>{
-                            navigate({
-                            learnKoreaLink: false,
-                            workKoreaLink: true,
-                            })
-                        }}
-
-                        >Work in South korea</h3>
-                    </Link>
-                </Col>
-                <Col lg={1}></Col>
-            </Row>
-
-            <Container style={{height: 50}}></Container>
-
-            <div>
-                <TransitionGroup>
-                <CSSTransition
-                    key={location.key}
-                    classNames="fade"
-                    timeout={300}
-                >
-                    <Switch location={location}>
-                    <Route path="/learn-korea" children={<LearnKorea />} />
-                    <Route path="/work-korea" children={<WorkOnKore />} />
-
-                    </Switch>
-                </CSSTransition>
-                </TransitionGroup>
+              </p>
             </div>
-            
-
-
-        </Container>
-    )
-}
-
-//export default ServicesPage
-
-
-function LearnKorea(){
-    return(
-      <div>
-        <Container style={{height: 100}}></Container>
-        <CustomLeftTile title='Language' picture={koreanLang1.default}/>
-        <Container style={{height: 100}}></Container>
-        <CustomRightTile title='Culture' picture={koreanLang2.default} />
-        <Container style={{height: 100}}></Container>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div data-aos="flip-right" data-aos-duration="2000"  class="col-md-6 mb-4 mb-md-0">
+        <img class="img-fluid" src="https://thumbs.dreamstime.com/b/financial-concept-meaning-learn-korean-inscription-page-218116175.jpg" alt="scholarship news"/>
       </div>
-    )
-}
-
-
-function WorkOnKore(){
-    return(
-      <div>
-          <Container style={{height: 100}}></Container>
-          <CustomLeftTile title='Operator' picture={workKorea1.default}/>
-          <Container style={{height: 100}}></Container>
-          <CustomRightTile title='Technician' picture={workKore2.default} />
-          <Container style={{height: 100}}></Container>
+      <div class="col-md-6">
+        <h2>Learn Korea</h2>
+        <strong class="mb-4 d-block"><i>Our campuses are living laboratories for sustainability.</i></strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore
+          et.dolore magna aliquauis aute irure dolor.
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Quas cum ut ab nesciunt distinctio maxime expedita fugit laborum? Aliquid,
+          quia.</p>
       </div>
-    )
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h2>Work in Korea</h2>
+        <strong class="mb-4 d-block"><i>Our campuses are living laboratories for sustainability.</i></strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore
+          et.dolore magna aliquauis aute irure dolor.
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Quas cum ut ab nesciunt distinctio maxime expedita fugit laborum? Aliquid,
+          quia.</p>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000"  class="col-md-6 mb-4 mb-md-0">
+        <img class="img-fluid" src="https://www.expat.com/upload/guide/1561965139-internship-korea-news_item_slider-t1561965139.jpg" alt="scholarship news"/>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card-branch card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="https://lh3.googleusercontent.com/-RkLz9VgTKqQ/XMQt99aQ0gI/AAAAAAAACpk/8Q64ydnaLgsMb2Q09R8MTUoEJ_TBzGfggCK8BGAs/s512/bang-chu-cai-tieng-han%25281%2529.jpg" alt="scholarship-thumb"/>
+          <div class="card-body">
+            <h4 class="card-title mb-3 text-white">Language</h4>
+            <ul class="list-styled text-white">
+              <li>institutes</li>
+              <li>Smart-affiliated research</li>
+              <li>Digital Access to Scholarship</li>
+              <li>Smart Catalyst</li>
+              <li>Smart Library Portal</li>
+              <li>Smart research programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card-branch card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="https://www.optilingo.com/wp-content/uploads/2019/04/korea-japanese-flags.jpg" alt="scholarship-thumb"/>
+          <div class="card-body">
+            <h4 class="card-title mb-3 text-white">Culture</h4>
+            <ul class="list-styled text-white">
+              <li>institutes</li>
+              <li>Smart-affiliated research</li>
+              <li>Digital Access to Scholarship</li>
+              <li>Smart Catalyst</li>
+              <li>Smart Library Portal</li>
+              <li>Smart research programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card-branch card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="https://imgc.artprintimages.com/img/print/busy-street-in-seoul-south-korea-korea-asia_u-l-p2ehaa0.jpg?h=550&p=0&w=550&background=fbfbfb" alt="scholarship-thumb"/>
+          <div class="card-body">
+            <h4 class="card-title mb-3 text-white">Opportunity</h4>
+            <ul class="list-styled text-white">
+              <li>institutes</li>
+              <li>Smart-affiliated research</li>
+              <li>Digital Access to Scholarship</li>
+              <li>Smart Catalyst</li>
+              <li>Smart Library Portal</li>
+              <li>Smart research programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </>
+  )
 }
 
+export default ServicesPage
