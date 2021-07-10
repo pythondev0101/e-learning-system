@@ -115,6 +115,8 @@ const Testimonies = () => {
     )
 }
 
+const defaultPhoto = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png'
+
 function Orientation(){
     const orientation_1 = require('../assets/compilation/ORIENTATION/or_1.jpg')
     const orientation_2 = require('../assets/compilation/ORIENTATION/or_2.jpg')
@@ -122,8 +124,8 @@ function Orientation(){
     const orientation_4 = require('../assets/compilation/ORIENTATION/or_4.jpg')
     const orientation_5 = require('../assets/compilation/ORIENTATION/or_5.jpg')
     const orientation_6 = require('../assets/compilation/ORIENTATION/or_6.jpg')
-    const defaultPhoto = require('../assets/images/under_maintenance.png');
-    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto.default]);
+    
+;    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
 
     
     
@@ -131,7 +133,7 @@ function Orientation(){
         <>
         <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => setModalShow([false, defaultPhoto.default])}
+        onHide={() => setModalShow([false, ])}
         photo={photo}
         />  
             <section class="section">
@@ -230,13 +232,12 @@ function ActualClass(){
     const actual_class4 = require('../assets/compilation/ACTUAL CLASS/ac_4.jpg');
     const actual_class5 = require('../assets/compilation/ACTUAL CLASS/ac_5.jpg');
     const actual_class6 = require('../assets/compilation/ACTUAL CLASS/ac_6.jpg');
-    const defaultPhoto = require('../assets/images/under_maintenance.png');
-    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto.default]);
+    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
     return(
         <>
         <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => setModalShow([false, defaultPhoto.default])}
+        onHide={() => setModalShow([false, defaultPhoto])}
         photo={photo}
         />  
 
@@ -335,9 +336,9 @@ function Graduation(){
     const graduation_4 = require('../assets/compilation/GRADUATION/gr_4.jpg')
     const graduation_5 = require('../assets/compilation/GRADUATION/gr_5.jpg')
     const graduation_6 = require('../assets/compilation/GRADUATION/gr_6.jpg')
-    const defaultPhoto = require('../assets/images/under_maintenance.png');
 
-    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto.default]);
+
+    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
     return(
         <>
             <MyVerticallyCenteredModal
@@ -439,15 +440,14 @@ function Skilltest(){
     const skill_test_4 = require('../assets/compilation/ACTUAL CLASS/ac_4.jpg');
     const skill_test_5  = require('../assets/compilation/ACTUAL CLASS/ac_5.jpg');
     const skill_test_6  = require('../assets/compilation/ACTUAL CLASS/ac_6.jpg');
-    const defaultPhoto = require('../assets/images/under_maintenance.png');
-    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto.default]);
+    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
     
 
     return(
         <>
              <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => setModalShow([false, defaultPhoto.default])}
+        onHide={() => setModalShow([false, defaultPhoto])}
         photo={photo}
         />    
              <section class="section">
@@ -545,15 +545,15 @@ function Departure(){
     const departure_4 = require('../assets/compilation/DEPARTURE/de_4.jpg')
     const departure_5 = require('../assets/compilation/DEPARTURE/de_5.jpg')
     const departure_6 = require('../assets/compilation/DEPARTURE/de_6.jpg')
-    const defaultPhoto = require('../assets/images/under_maintenance.png');
-    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto.default]);
+
+    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
 
 
     return(
         <>
             <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => setModalShow([false, defaultPhoto.default])}
+        onHide={() => setModalShow([false, defaultPhoto])}
         photo={photo}
         />   
              <section class="section">
