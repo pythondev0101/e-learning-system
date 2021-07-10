@@ -26,7 +26,7 @@ const ContactUs = () => {
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="section-title">Contact Us</h2>
+        <h2 class="section-title">How can I help you?</h2>
       </div>
     </div>
     <div class="row">

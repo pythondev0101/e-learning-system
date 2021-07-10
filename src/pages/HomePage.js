@@ -1,15 +1,10 @@
 import './HomePage.css';
-import React, { Component, useRef, useEffect } from "react";
-import { render } from "react-dom";
+import React from "react";
 import { Link } from 'react-router-dom';
+import BranchesSection from './BranchesSection';
 
-const ceoPhoto = require('../assets/images/ceo_photo_2.png');
-const hanguel = require('../assets/images/hangeul.png');
-const korea = require('../assets/images/korea.jpg');
-const lorem = require('../assets/images/lorem_logo.png');
+
 const underMaintenance = require('../assets/images/under_maintenance.png');
-
-
 // Prime Assets
 
 const actual_class_1 = require('../assets/prime_assets/actual_class_1.jpg');
@@ -33,10 +28,9 @@ const HomePage = () => {
 
         <div data-aos="fade-up" class="align-items-center row">
                     <div class="col-lg-6 pb-3 pt-3">
-                        <h1 class="display-4 font-weight-bold mb-3">Prime Language and Tech. Center Inc.</h1>
+                        <h1 class="h1 text-white font-primary">Prime Language and Tech. Center Inc.</h1>
                         <p class="font-weight-light lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. </p>
                         <a class="btn btn-outline-light pl-4 pr-4 rounded-pill" href="{{url_for('prime_home.pre_register')}}">Pre-register</a>
-                        <a class="btn btn-light ml-2 pl-4 pr-4 rounded-pill" href="#">Contact Now</a>
                     </div>
                 </div>
             </div>
@@ -332,8 +326,7 @@ const HomePage = () => {
         <div class="container pb-5 pt-5">
         <div class="align-items-center mb-3 row">
             <div class="col-lg-7">
-                <h5 class="mb-1 text-white">Services</h5>
-                <h2 class="text-white">Lorem Ipsum dolor sit amet</h2>
+                <h2 class="text-white">Services</h2>
                 <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. </p>
             </div>
             <div class="col-lg-auto ml-auto">
@@ -407,75 +400,9 @@ const HomePage = () => {
 
         {/* Branches Section */}
 
-        <div class="custom-shape-divider-bottom-1624664293">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-        </div>
-
-        <div className='branches-div'>
-                     
-    <div data-aos="zoom-in" class="border border-left-0 border-right-0 border-top-0 pb-5 pt-5">
-        <div class="container pb-5 pt-5">
-            <h5 class="text-center text-danger">Our Branches</h5>
-            <h2 class="h1 mb-4 text-center text-dark">Some of our offices</h2>
-            <div class="row">
-                <div data-aos="flip-left" data-aos-duration="3000" class="col-md-6 pb-3 pt-3">
-                    <a href="#" class="d-block pb-5 text-decoration-none text-white primary-color">
-                        <div class="p-5">
-                            <h4 class="mb-3">Cebu</h4>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue
-                                tortor.</p>
-                        </div>
-            <img width="100%" height="400px" src={underMaintenance.default}/>
-                        
-                    </a>
-                </div>
-                <div data-aos="flip-right" data-aos-duration="3000" class="col-md-6 pb-3 pt-3">
-                    <a href="#" class="d-block mb-md-n5 mt-md-5 pb-5 text-decoration-none text-white primary-color">
-                        <div class="p-5">
-                            <h4 class="mb-3">Bohol</h4>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue
-                                tortor.</p>
-                        </div>
-                        <img width="100%" height="400px" src= {underMaintenance.default}/>
-                    </a>
-                </div>
-                <div data-aos="flip-left" data-aos-duration="3000" class="col-md-6 pb-3 pt-3">
-                    <a href="#" class="d-block pb-5 text-decoration-none text-white primary-color">
-                        <div class="p-5">
-                            <h4 class="mb-3">Tacloban</h4>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue
-                                tortor.</p>
-                        </div>
-            <img width="100%" height="400px" src={underMaintenance.default}/>
-                     
-                    </a>
-                </div>
-                <div data-aos="flip-right" data-aos-duration="3000" class="col-md-6 pb-3 pt-3">
-                    <a href="#" class="d-block mt-md-5 pb-5 text-decoration-none text-white primary-color">
-                        <div class="p-5">
-                            <h4 class="mb-3">Palawan</h4>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue
-                                tortor.</p>
-                        </div>
-            <img width="100%" height="400px" src={underMaintenance.default}/>
-                    </a>
-                </div>
-            </div>
-            <div class="pb-4 pt-4 text-center">
-                <a class="btn btn-primary primary-color pl-4 pr-4 rounded-pill" href="#">View More</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="custom-shape-divider-top-1624664656">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
-    </div>
+        <BranchesSection />
         {/* End of Branches */}
-            </div>
+        </div>
         </>
     )
 }
