@@ -14,6 +14,7 @@ import ContactUs from './pages/ContactUs';
 import Branches from './pages/Branches';
 import Testimonies from './pages/Testimonies';
 import ServicesPage from './pages/ServicesPage';
+import PreRegister from './pages/PreRegister';
 
 
 function App() {
@@ -66,8 +67,10 @@ function App() {
         <Switch>
           <Route path='/branches-butuan' exact component={butuanBrances} />
         </Switch>
+        <Switch>
+          <Route path='/pre-register' exact component={PreRegister} />
+        </Switch>
       </Router>
-      <Footer/>
     </>
   );
 }

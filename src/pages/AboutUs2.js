@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Slider from "react-slick";
 import { Row, Col } from 'react-bootstrap';
+import Footer from '../components/Footer';
 
 
 const underMaintenance = require('../assets/images/under_maintenance.png');
@@ -101,6 +102,7 @@ const AboutUs2 = () => {
                 
             </div>
          </div>
+         <Footer/>
        </>
     )
 }

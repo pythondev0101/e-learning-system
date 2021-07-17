@@ -68,7 +68,7 @@ const PrimeNavBar2 = () => {
                     </li>
                     
                 </ul>                     
-                <a class="btn btn-light ml-lg-auto pl-4 pr-4 rounded-pill" href="#">Log In</a>  
+                {/* <a class="btn btn-light ml-lg-auto pl-4 pr-4 rounded-pill" href="#">Log In</a>   */}
             </div>                 
         </div>             
     </nav>
