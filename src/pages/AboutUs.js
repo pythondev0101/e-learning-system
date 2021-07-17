@@ -2,6 +2,7 @@ import React from 'react'
 import './Animate.css';
 import './Pretty.css';
 import './aos.css';
+import Footer from '../components/Footer';
 
 const underMaintenance = require('../assets/images/under_maintenance.png');
 const demoBanner = require('../assets/images/demo_2.jpg');
@@ -39,7 +40,7 @@ const AboutUs = () => {
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div data-aos="zoom-in-up" class="col-12">
         <img class="img-fluid w-100 mb-4" src={demoBanner.default} alt="about image"/>
         <h2 class="section-title">CHOGI LANGUAGE AND TECHNOLOGY CENTER INC. </h2>
         <p>
@@ -56,7 +57,7 @@ const AboutUs = () => {
 </section>
 
 <section class="section">
-  <div class="container">
+  <div data-aos="fade-right" class="container">
     <div class="row">
       <div class="col-12">
         <h2 class="section-title">What is eps-topik?</h2>
@@ -122,7 +123,7 @@ const AboutUs = () => {
 
 
 <section class="video-cover">
-  <div class="container">
+  <div  class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-4 position-relative success-video">
         <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
@@ -184,7 +185,7 @@ const AboutUs = () => {
 
   
 
-
+<Footer/>
 
         </>
     )

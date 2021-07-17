@@ -2,6 +2,7 @@ import React from 'react'
 import './Pretty.css';
 import './Animate.css';
 import './aos.css';
+import Footer from '../components/Footer';
 
 const ContactUs = () => {
     return (
@@ -52,7 +53,7 @@ const ContactUs = () => {
   </div>
   </div>
 </section>
-
+<Footer/>
 
 
       </>

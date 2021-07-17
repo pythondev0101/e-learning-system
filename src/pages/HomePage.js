@@ -2,6 +2,8 @@ import './HomePage.css';
 import React from "react";
 import { Link } from 'react-router-dom';
 import BranchesSection from './BranchesSection';
+import Footer from '../components/Footer';
+
 
 
 const underMaintenance = require('../assets/images/under_maintenance.png');
@@ -30,7 +32,9 @@ const HomePage = () => {
                     <div class="col-lg-6 pb-3 pt-3">
                         <h1 class="h1 text-white font-primary">Prime Language and Tech. Center Inc.</h1>
                         <p class="font-weight-light lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. </p>
-                        <a class="btn btn-outline-light pl-4 pr-4 rounded-pill" href="{{url_for('prime_home.pre_register')}}">Pre-register</a>
+                        <Link to='/pre-register'>
+                            <a class="btn btn-outline-light pl-4 pr-4 rounded-pill">Pre-register</a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -402,6 +406,7 @@ const HomePage = () => {
 
         <BranchesSection />
         {/* End of Branches */}
+        <Footer/>
         </div>
         </>
     )

@@ -3,6 +3,7 @@ import './Pretty.css';
 import './Animate.css';
 import './aos.css';
 import './EventreStyle.css';
+import Footer from '../components/Footer';
 import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import {Modal, Button} from 'react-bootstrap';
 
@@ -17,21 +18,21 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Demo Title
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img src={props.photo} alt="" class="img-fluid"/>
-          <h4>Centered Modal</h4>
+          {/* <h4>Centered Modal</h4>
           <p>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
             consectetur ac, vestibulum at eros.
-          </p>
+          </p> */}
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     );
   }
@@ -110,7 +111,7 @@ const Testimonies = () => {
                 </div>
             </div>
         </section>
-
+        <Footer/>
       </>
     )
 }

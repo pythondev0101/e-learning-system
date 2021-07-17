@@ -1,5 +1,6 @@
 import React from 'react'
 import './Pretty.css';
+import Footer from '../components/Footer';
 
 const ServicesPage = () => {
   return (
@@ -110,6 +111,7 @@ const ServicesPage = () => {
     </div>
   </div>
 </section>
+<Footer/>
     </>
   )
 }

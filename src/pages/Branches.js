@@ -2,6 +2,7 @@ import React from 'react'
 import './Animate.css';
 import './Pretty.css';
 import './aos.css';
+import Footer from '../components/Footer';
 
 const Branches = ({title, photo, address, landmark, maplink, info}) => {
 
@@ -115,6 +116,7 @@ const Branches = ({title, photo, address, landmark, maplink, info}) => {
     </div>
   </div>
 </section>
+<Footer/>
     </>
     )
 }
