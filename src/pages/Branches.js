@@ -116,7 +116,7 @@ const Branches = ({title, photo, address, landmark, maplink, info}) => {
     </div>
   </div>
 </section>
-<Footer/>
+<Footer/> 
     </>
     )
 }
