@@ -6,6 +6,8 @@ import './EventreStyle.css';
 import Footer from '../components/Footer';
 import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import {Modal, Button} from 'react-bootstrap';
+import Slider from "react-slick";
+
 
 
 function MyVerticallyCenteredModal(props) {
@@ -125,34 +127,52 @@ function Orientation(){
     const orientation_4 = require('../assets/compilation/ORIENTATION/or_4.jpg')
     const orientation_5 = require('../assets/compilation/ORIENTATION/or_5.jpg')
     const orientation_6 = require('../assets/compilation/ORIENTATION/or_6.jpg')
+    const orientation_7 = require('../assets/compilation/ORIENTATION/or_7.jpg')
+    const orientation_8 = require('../assets/compilation/ORIENTATION/or_8.jpg')
+    const orientation_9 = require('../assets/compilation/ORIENTATION/or_9.jpg')
+    const orientation_10 = require('../assets/compilation/ORIENTATION/or_10.jpg')
+    const orientation_11 = require('../assets/compilation/ORIENTATION/or_11.jpg')
+    const orientation_12 = require('../assets/compilation/ORIENTATION/or_12.jpg')
     
 ;    const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
 
-    
+    var settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true
+    };
     
     return(
         <>
-        <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow([false, ])}
-        photo={photo}
-        />  
-            <section class="section">
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-12">
-                            <h2 class="section-title">Orientation</h2>
-                            <p>
-                            Orientation is conducted as the first step, for those
-                             interested applicants they must undergo an orientation to know the step by step
-                              process. Schedule of orientation is conducted regularly at least 2 times a week in 
-                              different branches. Clients who are interested with this program must send the personal 
-                            details Before attending the orientation to know the nearest branch where they can join the said
+
+        <section class="section"> 
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-12">
+                                <h2 class="section-title">Orientation</h2>
+                                <p>
+                                Orientation is conducted as the first step, for those
+                                interested applicants they must undergo an orientation to know the step by step
+                                process. Schedule of orientation is conducted regularly at least 2 times a week in 
+                                different branches. Clients who are interested with this program must send the personal 
+                                details Before attending the orientation to know the nearest branch where they can join the said
                             </p>
                         </div>
                         </div>
                     </div>
                     </section>
+        <Slider {...settings}>
+          <div>
+            
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow([false, ])}
+            photo={photo}
+            />  
             <div class="gallery-wrapper">
                             <div  data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
                                 <div class="image-block">
@@ -221,6 +241,88 @@ function Orientation(){
                                 </div>
                             </div>
                         </div>
+          </div>
+
+
+          <div>
+            
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow([false, ])}
+            photo={photo}
+            />  
+            <div class="gallery-wrapper">
+                            <div  data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, orientation_7.default])} class="image">
+                                        <img src={orientation_7.default} class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix party events">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, orientation_8.default])} class="image">
+                                        <img src={orientation_8.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, orientation_9.default])} class="image">
+                                        <img src={orientation_9.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting concert">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, orientation_10.default])} class="image">
+                                        <img src={orientation_10.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix concert party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, orientation_11.default])} class="image">
+                                        <img src={orientation_11.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix events conference">
+                                <div onClick={() => setModalShow([true, orientation_12.default])} class="image-block">
+                                    <div class="image">
+                                        <img src={orientation_12.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+          </div>
+        </Slider>
+
+
         </>
     )
 }
@@ -233,7 +335,23 @@ function ActualClass(){
     const actual_class4 = require('../assets/compilation/ACTUAL CLASS/ac_4.jpg');
     const actual_class5 = require('../assets/compilation/ACTUAL CLASS/ac_5.jpg');
     const actual_class6 = require('../assets/compilation/ACTUAL CLASS/ac_6.jpg');
+    const actual_class7 = require('../assets/compilation/ACTUAL CLASS/ac_7.jpg');
+    const actual_class8 = require('../assets/compilation/ACTUAL CLASS/ac_8.jpg');
+    const actual_class9 = require('../assets/compilation/ACTUAL CLASS/ac_9.jpg');
+    const actual_class10 = require('../assets/compilation/ACTUAL CLASS/ac_10.jpg');
+    const actual_class11 = require('../assets/compilation/ACTUAL CLASS/ac_11.jpg');
     const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true
+    };
+    
     return(
         <>
         <MyVerticallyCenteredModal
@@ -256,8 +374,10 @@ function ActualClass(){
                         </div>
                         </div>
                     </div>
-                    </section> 
-            <div class="gallery-wrapper">
+                    </section>
+                    <Slider {...settings}>
+                    <div>
+                    <div class="gallery-wrapper">
                             <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
                                 <div class="image-block">
                                     <div onClick={() => setModalShow([true, actual_class1.default])} class="image">
@@ -325,6 +445,69 @@ function ActualClass(){
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                    <div class="gallery-wrapper">
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, actual_class7.default])} class="image">
+                                        <img src={actual_class7.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix party events">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, actual_class8.default])} class="image">
+                                        <img src={actual_class8.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, actual_class9.default])} class="image">
+                                        <img src={actual_class9.default} class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting concert">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, actual_class9.default])} class="image">
+                                        <img src={actual_class9.default} class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix concert party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, actual_class10.default])} class="image">
+                                        <img src={actual_class10.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                        </div>
+                    </div>
+                    </Slider>
+            
         </>
     )
 }
@@ -337,9 +520,24 @@ function Graduation(){
     const graduation_4 = require('../assets/compilation/GRADUATION/gr_4.jpg')
     const graduation_5 = require('../assets/compilation/GRADUATION/gr_5.jpg')
     const graduation_6 = require('../assets/compilation/GRADUATION/gr_6.jpg')
-
+    const graduation_7 = require('../assets/compilation/GRADUATION/gr_7.jpg')
+    const graduation_8 = require('../assets/compilation/GRADUATION/gr_8.jpg')
+    const graduation_9 = require('../assets/compilation/GRADUATION/gr_9.jpg')
+    const graduation_10 = require('../assets/compilation/GRADUATION/gr_10.jpg')
+    const graduation_11 = require('../assets/compilation/GRADUATION/gr_11.jpg')
+    const graduation_12 = require('../assets/compilation/GRADUATION/gr_12.jpg')
 
     const [[modalShow, photo], setModalShow] = useState([false, defaultPhoto]);
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true
+    };
     return(
         <>
             <MyVerticallyCenteredModal
@@ -361,7 +559,9 @@ function Graduation(){
                         </div>
                         </div>
                     </div>
-                    </section> 
+                    </section>
+        <Slider {...settings}>
+            <div>
             <div class="gallery-wrapper">
                             <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
                                 <div class="image-block">
@@ -430,6 +630,80 @@ function Graduation(){
                                 </div>
                             </div>
                         </div>
+            </div>
+            <div>
+            <div class="gallery-wrapper">
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_7.default])} class="image">
+                                        <img src={graduation_7.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix party events">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_8.default])} class="image">
+                                        <img  src={graduation_8.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_9.default])} class="image">
+                                        <img src={graduation_9.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix meeting concert">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_10.default])} class="image">
+                                        <img src={graduation_10.default} class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix concert party">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_11.default])} class="image">
+                                        <img src={graduation_11.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix events conference">
+                                <div class="image-block">
+                                    <div onClick={() => setModalShow([true, graduation_12.default])} class="image">
+                                        <img src={graduation_12.default} alt="gallery-image" class="img-fluid"/>
+                                        <div class="primary-overlay">
+                                            <a class="image-popup" data-effect="mfp-with-zoom"><i
+                                                    class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
+            </Slider> 
+          
         </>
     )
 }
@@ -524,8 +798,8 @@ function Skilltest(){
                             </div>
                             <div data-aos="flip-up" data-aos-duration="1000" class="gallery-item mix events conference">
                                 <div class="image-block">
-                                    <div onClick={() => setModalShow([true, skill_test_5.default])} class="image">
-                                        <img src={skill_test_5.default} alt="gallery-image" class="img-fluid"/>
+                                    <div onClick={() => setModalShow([true, skill_test_6.default])} class="image">
+                                        <img src={skill_test_6.default} alt="gallery-image" class="img-fluid"/>
                                         <div class="primary-overlay">
                                             <a class="image-popup" data-effect="mfp-with-zoom"><i
                                                     class="fa fa-picture-o"></i></a>

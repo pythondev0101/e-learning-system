@@ -3,6 +3,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import BranchesSection from './BranchesSection';
 import Footer from '../components/Footer';
+import Slider from "react-slick";
+import {Card, Button} from "react-bootstrap"
 
 
 
@@ -16,25 +18,88 @@ const orientation_1 = require('../assets/prime_assets/orientation_1.jpg');
 const proof_of_gallery  = require('../assets/prime_assets/proof_of_gallery.jpg');
 const skill_test = require('../assets/prime_assets/skill_test_1.jpg');
 
-    
+
 
 const HomePage = () => {
+
+    const loremDes ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut';
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        beforeChange: function(currentSlide, nextSlide) {
+          console.log("before change", currentSlide, nextSlide);
+        },
+        afterChange: function(currentSlide) {
+          console.log("after change", currentSlide);
+        }
+      };
     
     return (
         <> 
         <div className=''>
 
         {/* Banner */}
-        <div class="header-background pb-5 pt-5 text-white">
-        <div class="container pb-5 pt-5">
+        <div class="header-background text-white">
+        <div class="container">
 
         <div data-aos="fade-up" class="align-items-center row">
-                    <div class="col-lg-6 pb-3 pt-3">
+                    <div class="banner-title col-lg-6">
                         <h1 class="h1 text-white font-primary">Prime Language and Tech. Center Inc.</h1>
                         <p class="font-weight-light lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. </p>
                         <Link to='/pre-register'>
                             <a class="btn btn-outline-light pl-4 pr-4 rounded-pill">Pre-register</a>
                         </Link>
+                    </div>
+                    <div class="bulletin col-lg-6 " height='100%'>
+                        <h4 class="h1 text-white font-primary">Announcement</h4>
+                        <div class='news'>
+                        <Slider {...settings}>
+                            <div class='news-item'>
+                                <Card>
+                                <Card.Header as="h5">Demo Title</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Demo Subtitle</Card.Title>
+                                    <Card.Text>
+                                    {loremDes}
+                                    </Card.Text>
+                                    <Button variant="primary">Read More</Button>
+                                </Card.Body>
+                                </Card>
+                            </div>
+                            <div class='news-item'>
+                                <Card>
+                                <Card.Header as="h5">Demo Title</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Demo Subtitle</Card.Title>
+                                    <Card.Text>
+                                    {loremDes}
+                                    </Card.Text>
+                                    <Button variant="primary">Read More</Button>
+                                </Card.Body>
+                                </Card>
+                            </div>
+                            <div class='news-item'>
+                                <Card>
+                                <Card.Header as="h5">Demo Title</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Demo Subtitle</Card.Title>
+                                    <Card.Text>
+                                    {loremDes}
+                                    </Card.Text>
+                                    <Button variant="primary">Read More</Button>
+                                </Card.Body>
+                                </Card>
+                            </div>
+                        </Slider>
+                        </div>
                     </div>
                 </div>
             </div>
